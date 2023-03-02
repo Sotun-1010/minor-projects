@@ -1,0 +1,47 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6rem;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #494A49;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.counter-box {
+    background-color: #e54624;
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    border-radius: 10px;
+    border: none;
+}
+
+.number-count{
+    margin: 1rem 0;
+}
+
+button, #add, #subtract{
+    padding: 0, .2rem;
+    width: 70px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 2rem;
+}

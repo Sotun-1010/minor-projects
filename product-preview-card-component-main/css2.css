@@ -1,0 +1,157 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+ */
+ @import url(https://fonts.google.com/specimen/Montserrat);
+ @import url(https://fonts.google.com/specimen/Fraunces);
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 10%;
+}
+
+.grid {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    display: inherit;
+    /* display: inline-block; */
+    height: 100%;
+}
+
+.product-info {
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.product-info h3 {
+    font: 1.5rem 'Fraunces';
+    letter-spacing: 6px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+    color: hsl(212, 21%, 14%);
+    font: 'Montserrat';
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+ .text, p {
+    font-size: 0.85rem;
+    color: hsl(228, 12%, 48%);
+    font: 'Fraunces';
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+.product-info #newprice {
+    color: hsl(158, 36%, 37%);
+    font-size: 2.3rem;
+    font: 'Montserrat';
+    font-weight: 700;
+    margin-right: 2%;
+}
+
+.product-info #oldprice {
+    color:hsl(228, 12%, 48%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.product-info .button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.product-info .button #btn {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.product-info .button #favicon {
+    margin-right: 4%;
+}
+
+.product-info .button #btn:hover {
+    background: hsl(157, 55%, 10%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 628px) {
+    .grid{
+        grid-template-columns: 1fr;
+        margin: 20px 0;
+    }
+    .image img {
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

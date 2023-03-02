@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.line  {
+    margin-top: 3px;
+    width: 5rem;
+    border: 2px solid rgb(77, 207, 240);
+    border-radius: 10px;
+    box-shadow: 5px;
+    margin-bottom: 7px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+    background-color: darksalmon;
+    border-radius: 15px;
+    border: none;
+    padding: 1.5rem 3rem;
+    height: 65%;
+    animation-name: container;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes container{
+    0% {background-color: darksalmon;}
+    0% {background-color:crimson ;}
+    50% {background-color:brown;}
+    100% {background-color:darksalmon;}
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: -12rem;
+}
+.fa-sharp {
+    color: rgb(77, 207, 240);
+    font-size: 4rem;
+    position: relative;
+    top: 60px;
+    left: -80px;
+    z-index: 2;
+}
+
+#circle{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(77, 207, 240);
+    color: blue;
+    border-radius: 50%;
+    position: relative;
+    top: -200px;
+    left: 8px;
+}
+
+#image{
+    object-fit: cover;
+    border: 3px solid rgb(105, 105, 255);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#name {
+    font-weight: 600;
+    color: ghostwhite;
+}
+
+#title {
+    font-weight: 500;
+    font-size: smaller;
+    color: rgb(2, 2, 248);
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-chevron-right {
+    position: relative;
+    bottom: 11.8rem;
+    left: 26rem;
+    background-color: rgb(77, 207, 240);
+    padding: 1.3rem;
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+.fa-chevron-left {
+    position: relative;
+    bottom: 11.8rem;
+    right: 26rem;
+    background-color: rgb(77, 207, 240);
+    padding: 1.3rem;
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+#btn {
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    padding: .7rem 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(77, 207, 240);
+    font-size: large;
+    font-weight: 600;
+
+}
