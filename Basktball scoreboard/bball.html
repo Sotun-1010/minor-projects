@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="bball.css">
+    <script src="bball.js" defer></script>
+</head>
+<body>
+    <h1>SCOREBOARD</h1>
+    <div class="time">
+        <div id="time"><span id="mins">12</span><span>:</span><span id="secs">00</span></div>
+        <div class="ctrlbtn">
+            <button id="strt">START</button>
+            <button id="timereset">SET</button>
+            <!-- <button id="stop">STOP</button> -->
+        </div>
+    </div>
+    <div class="scores">
+        <div class="home">
+            <h3 id="header-home">HOME</h3>
+            <div class="home-score">0</div>
+            <div class="home-buttons">
+                <button class="one" id="h1">1</button>
+                <button class="two" id="h2">2</button>
+                <button class="three" id="h3">3</button>
+            </div>
+        </div>
+        <div class="divider">---</div>
+        <div class="away">
+            <h3 id="header-away">AWAY</h3>
+            <div class="away-score">0</div>
+            <div class="away-buttons">
+                <button class="one" id="a1">1</button>
+                <button class="two" id="a2">2</button>
+                <button class="three" id="a3">3</button>
+            </div>
+        </div>
+    </div>
+    <div class="reset" id="reset"><h2>RESET SCORES</h2></div>
+</body>
+</html>
